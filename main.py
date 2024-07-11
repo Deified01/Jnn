@@ -119,10 +119,6 @@ if __name__ == "__main__":
     flask_thread.start()
     client.start()
 
-    client.loop.create_task(send_propose())
-    client.loop.create_task(send_tesure())
-    client.loop.create_task(send_shunt())
-    client.loop.create_task(send_sfight())
     client.loop.run_until_complete(main())
     client.loop.create_task(send_riddle())
     client.run_until_disconnected()
