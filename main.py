@@ -24,7 +24,7 @@ string_session = "1BVtsOHYBu7wVbjA98EfMVYL1qSL4GAiNbRGZSHTwVL7Me71M5E4kv2XqaQJRq
 client = TelegramClient(StringSession(string_session), api_id, api_hash)
 
 async def main():
-    await client.start()
+    #Pissy
     logger.info('''
  ___                   _______            _________________
 |   |                /   ___   \         |______    _______|
@@ -117,6 +117,7 @@ if __name__ == "__main__":
     flask_thread = threading.Thread(target=run_flask_app)
     flask_thread.daemon = True
     flask_thread.start()
+    await client.start()
 
     client.loop.create_task(send_propose())
     client.loop.create_task(send_tesure())
