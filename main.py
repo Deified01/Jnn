@@ -78,7 +78,7 @@ async def send_propose():
         try:
             await client.send_message("@lustsupport", "/propose")
             logger.info("Sent /propose")
-            await asyncio.sleep(600)  # 10 minutes
+            await asyncio.sleep(602)  # 10 minutes
         except Exception as e:
             logger.error(f"Error sending /propose: {e}")
 
@@ -87,7 +87,7 @@ async def send_tesure():
         try:
             await client.send_message("@lustsupport", "/tesure")
             logger.info("Sent /tesure")
-            await asyncio.sleep(1800)  # 30 minutes
+            await asyncio.sleep(1805)  # 30 minutes
         except Exception as e:
             logger.error(f"Error sending /tesure: {e}")
 
@@ -105,7 +105,7 @@ async def send_sfight():
         try:
             await client.send_message("@lustsupport", "/sfight")
             logger.info("Sent /sfight")
-            await asyncio.sleep(600)  # 10 minutes
+            await asyncio.sleep(610)  # 10 minutes
         except Exception as e:
             logger.error(f"Error sending /sfight: {e}")
 
